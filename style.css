@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Container Start  */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: max-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  box-shadow: 1rem 2rem 2rem hsl(234, 85%, 45%,0.1);
+}
+
+/* .container-border{
+    background-color: black;
+} */
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  /* justify-content: center; */
+  align-items: center;
+  height: 38rem;
+  width: 28rem;
+  border-radius: 2.5rem;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-bottom-right-radius: 2.5rem;
+  height: 38rem;
+  width: 28rem;
+  padding: 0rem 2.5rem;
+}
+/* Container end  */
+
+/* result-contents start  */
+h1.your-result {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 13.5rem;
+  height: 13.5rem;
+}
+
+h2.marks-obtained {
+  font-size: 5rem;
+  color: hsl(0, 0%, 100%);
+}
+h2.totalmarks {
+  font-size: 1.2rem;
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+}
+
+h2.great {
+  margin-top: 1.875rem;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-size: 1.5rem;
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  padding: 0rem 4rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+/* result-contents end  */
+/* summary-content start  */
+h1.summary {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+img.icon {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-content: space-around; */
+  height: 22rem;
+}
+
+h3.overall {
+  text-align: end;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: hsl(224, 30%, 27%, 0.5);
+}
+.scored {
+  display: inline;
+  font-size: 1.5rem;
+  color: hsl(224, 30%, 27%);
+}
+.reaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(0, 100%, 67%, 0.05);
+  height: 4rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  /* margin-bottom: 0.5rem; */
+}
+
+h2.reaction-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+  color: hsl(0, 100%, 67%, 0.9);
+  margin-left: 1rem;
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+h2.memory-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 1.5rem;
+    color: hsl(39, 100%, 56%, 0.9);
+    margin-left: 1rem;
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+h2.verbal-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 1.5rem;
+    color: hsl(166, 100%, 37%, 0.9);
+    margin-left: 1rem;
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+h2.visual-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 1.5rem;
+    color: hsl(234, 85%, 45%, 0.9);
+    margin-left: 1rem;
+}
+
+.continue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(224, 30%, 27%);
+    height: 4rem;
+    border-radius: 2.5rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.375rem;
+    margin-top: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.continue:hover{
+    transition: ease-in 0.3s;
+    background-color: hsl(234, 85%, 45%);
+}
+
+@media screen and (max-width:599px) {
+    .container {
+    width: min-content;
+      }
+}
+/* summary-content end  */
+
+/* .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+} */
